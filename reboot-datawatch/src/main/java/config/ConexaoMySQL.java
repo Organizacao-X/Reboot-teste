@@ -18,9 +18,9 @@ public class ConexaoMySQL {
         BasicDataSource dataSource = new BasicDataSource();
         
         dataSource​.setDriverClassName("com.mysql.cj.jdbc.Driver");
-            dataSource​.setUrl("localhost:3306/datawatch?serverTimezone=UTC&autoReconnect=true&useSSL=false");
+            dataSource​.setUrl("jdbc:mysql://172.17.0.2:3306/datawatch?serverTimezone=UTC&autoReconnect=true&useSSL=false");
             dataSource​.setUsername("root");
-            dataSource​.setPassword("507959");
+            dataSource​.setPassword("datawatch");
         
         this.connection = new JdbcTemplate(dataSource);
     }
